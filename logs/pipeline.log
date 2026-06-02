@@ -1,0 +1,55 @@
+2026-06-02 13:53:18 | INFO | processing | Removed 2 reviews with null values
+2026-06-02 13:53:18 | INFO | processing | Removed 1 duplicate reviews
+2026-06-02 13:53:18 | INFO | processing | Removed 2 empty reviews
+2026-06-02 14:10:58 | INFO | ingestion | Downloading Dataset : snap/amazon-fine-food-reviews
+2026-06-02 14:11:11 | INFO | ingestion | Dataset downloaded successfully
+2026-06-02 14:16:08 | INFO | test | Starting full pipeline test
+2026-06-02 14:16:08 | INFO | test | Step 1 - Reading reviews
+2026-06-02 14:16:08 | INFO | ingestion | Reading Reviews from include/raw/reviews.csv
+2026-06-02 14:16:08 | INFO | ingestion | Read 100 reviews successfully
+2026-06-02 14:16:08 | INFO | test | Read 100 reviews
+2026-06-02 14:16:08 | INFO | test | Step 2 - Cleaning reviews
+2026-06-02 14:16:08 | INFO | processing | Starting cleaning. Input: 100 reviews
+2026-06-02 14:16:08 | INFO | processing | Removed 1 duplicate reviews
+2026-06-02 14:16:08 | INFO | processing | Cleaning complete. Output: 99 reviews
+2026-06-02 14:16:08 | INFO | test | Cleaned 99 reviews
+2026-06-02 14:16:08 | INFO | test | Step 3 - Analysing reviews
+2026-06-02 14:16:08 | INFO | ai | Starting AI analysis for 5 reviews
+2026-06-02 14:16:08 | INFO | ai | Processing batch 1 - reviews 1 to 5
+2026-06-02 14:16:08 | INFO | ai | Analysing batch of 5 reviews
+2026-06-02 14:16:08 | INFO | ai | Analysing review 1/5 - id: 1
+2026-06-02 14:16:11 | INFO | ai | Analysing review 2/5 - id: 2
+2026-06-02 14:16:13 | INFO | ai | Analysing review 3/5 - id: 3
+2026-06-02 14:16:15 | INFO | ai | Analysing review 4/5 - id: 4
+2026-06-02 14:16:18 | INFO | ai | Analysing review 5/5 - id: 5
+2026-06-02 14:16:21 | INFO | ai | Batch analysis complete. 5 reviews analysed.
+2026-06-02 14:16:21 | INFO | ai | AI analysis complete. Total: 5 reviews analysed.
+2026-06-02 14:16:21 | INFO | test | Analysed 5 reviews
+2026-06-02 14:16:21 | INFO | test | Step 4 - Generating report
+2026-06-02 14:16:21 | INFO | reporting | Saving 5 results to include/results/results.csv
+2026-06-02 14:16:21 | INFO | reporting | Results saved successfully to include/results/results.csv
+2026-06-02 14:16:21 | INFO | reporting | Generating report
+2026-06-02 14:16:21 | INFO | reporting | ============================================================
+2026-06-02 14:16:21 | INFO | reporting | AMAZON REVIEW PIPELINE REPORT
+2026-06-02 14:16:21 | INFO | reporting | Generated at: 2026-06-02 14:16:21
+2026-06-02 14:16:21 | INFO | reporting | ============================================================
+2026-06-02 14:16:21 | INFO | reporting | 
+Total reviews processed: 5
+2026-06-02 14:16:21 | INFO | reporting | Average star rating: 3.4 / 5.0
+2026-06-02 14:16:21 | INFO | reporting | 
+Sentiment breakdown:
+2026-06-02 14:16:21 | INFO | reporting |   positive: 3 (60%)
+2026-06-02 14:16:21 | INFO | reporting |   negative: 2 (40%)
+2026-06-02 14:16:21 | INFO | reporting | 
+Category breakdown:
+2026-06-02 14:16:21 | INFO | reporting |   product quality: 4 (80%)
+2026-06-02 14:16:21 | INFO | reporting |   value for money: 1 (20%)
+2026-06-02 14:16:21 | INFO | reporting | 
+Confidence breakdown:
+2026-06-02 14:16:21 | INFO | reporting |   high: 5 (100%)
+2026-06-02 14:16:21 | INFO | reporting | 
+Top negative reviews to action:
+2026-06-02 14:16:21 | INFO | reporting |   - Product B00813GRG4 (rated 1/5): Product mislabeled - received small unsalted peanuts instead of jumbo salted
+2026-06-02 14:16:21 | INFO | reporting |   - Product B000UA0QIQ (rated 2/5): medicinal taste like cough syrup
+2026-06-02 14:16:21 | INFO | reporting | ============================================================
+2026-06-02 14:16:21 | INFO | test | Pipeline test complete
